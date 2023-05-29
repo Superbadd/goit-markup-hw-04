@@ -14,7 +14,7 @@ html {
     --title-color: #2e2f42;
     --color-green: #31d0aa;
     --primary-color: #434455;
-    --color-light-slate: #8e8f99;
+    --mediocre-color: #8e8f99;
     --color-cornflower: #e7e9fc;
     --color-cloud: #f4f4fd;
     --color-navy-blue-modal: #2e2f42;
@@ -51,6 +51,7 @@ html {
     .header {
         background-color: #E7E9FC;
         border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
     .header-container {
@@ -161,8 +162,6 @@ html {
     color: #404bbf;
     }
 
-    /* First section */
-
     .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -198,6 +197,11 @@ html {
     width: calc((100% - 72px) / 4);
     }
 
+    .advantages-icons {
+    margin-left: 100px;
+    margin-bottom: 24px;
+    }
+
     /* Third section */
 
     .third-section {
@@ -223,13 +227,24 @@ html {
     }
 
     .fsection-container {
-    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+    height: 600px;
     margin-bottom: 120px;
     }
 
     .first-section {
     background-color: #2e2f42;
+    margin-left: auto;
+    margin-right: auto;
     padding: 188px 0;
+    outline: 1px solid black;
+    max-width: 1440px;
+    height: 600px;
+    background: url(../images/people.jpg), rgba(46, 47, 66, 0.7);
+    background-size: contain;
     }
 
     .headline { 
@@ -239,7 +254,6 @@ html {
     color: #ffffff; 
     font-size: 56px; 
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     }
 
@@ -260,7 +274,6 @@ html {
 
     .fourth-section {
     padding: 120px 0;
-    /* padding: 120px 156px; */
     }
 
     .team-subtitle {
@@ -274,7 +287,8 @@ html {
     
     .team-member {
     background-color: #ffffff;
-    padding-right: 24px;
+    /* padding-right: 24px; */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .team-member:nth-child(4n) {
@@ -291,6 +305,23 @@ html {
     gap: 24px;
     margin: 0;
     background-color: #F4F4FD;    
+    }
+
+    .social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    }
+
+    .social-item {
+     border-radius: 50%;
+     background-color: #404BBF;
+     padding: 12px;
+     margin-right: 24px;
+    }
+
+    .social-item:nth-child(4) {
+    margin-right: 0;
     }
 
     .button {
@@ -312,6 +343,28 @@ html {
     .button:hover,
     .button:focus {
     background-color: #404BBF;
+    }
+
+    /* Fifth section */
+
+    .custumers {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 120px;
+    gap: 24px;
+    }
+
+    .customers-pt {
+    padding: 16px 32px;
+    margin: 0;
+    border: 1px solid var(--mediocre-color);
+    border-radius: 4px;
+    }
+
+    .customers-item {
+    padding: 0;
+    margin: 0;
     }
 
 
@@ -363,6 +416,7 @@ html {
 
    .fourth-section {
     background-color: #F4F4FD;
+    margin-bottom: 120px;
    }
 
    .card-content {
@@ -372,9 +426,9 @@ html {
     flex-direction: column;
    }
 
-   :nth-child(3n) {
-       margin-right: 0;
-   }
+   /* :nth-child(3n) {
+    margin-right: 0;
+   } */
 
    .text {
     margin: 0;
@@ -412,6 +466,7 @@ html {
     width: calc((100% - 48px) / 3);
     margin-left: 0;
     padding: 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    }
 
    .cards-element:nth-last-child(-n + 3) {
@@ -439,15 +494,33 @@ html {
     padding-bottom: 100px;
    }
 
-   .footer > .logo {
-    display: inline-block;
+   .footer-container {
+    display: flex;
    }
+
+   .second-block {
+    margin-left: 120px;
+   }
+
+   /* .footer > .logo {
+    display: inline-block;
+   } */
 
    .footer-text {
     margin-bottom: 0;
     max-width: 264px;
     color: #f4f4fd;
+    /* font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; */
+   }
+
+   .footer-title {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 16px;
    }
