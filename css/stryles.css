@@ -275,7 +275,6 @@ html {
     text-transform: capitalize;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
-    /* тут был паддинг */
     }
 
     /* Fourth (team) section */
@@ -561,7 +560,7 @@ html {
    } */
 
    .footer-text {
-    margin-bottom: 0;
+    margin-bottom: 16px;
     max-width: 264px;
     color: #f4f4fd;
     /* font-size: 16px;
