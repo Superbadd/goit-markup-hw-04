@@ -50,11 +50,9 @@ html {
 
     .header {
         background-color: #E7E9FC;
-    }
-
-    .header-alt {
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
+
 
     .header-container {
         display: flex;
@@ -267,6 +265,7 @@ html {
     }
 
     .section-title {
+        margin-top: 0;
     margin-bottom: 72px;
     color: var(--title-color);
     font-weight: 700; 
@@ -560,6 +559,7 @@ html {
    }
 
    .footer-title {
+    margin-top: 0;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
