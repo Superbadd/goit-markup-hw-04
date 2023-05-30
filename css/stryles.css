@@ -456,7 +456,7 @@ html {
 
    .fourth-section {
     background-color: #F4F4FD;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
    }
 
    .card-content {
@@ -465,10 +465,6 @@ html {
     align-items: center;
     flex-direction: column;
    }
-
-   /* :nth-child(3n) {
-    margin-right: 0;
-   } */
 
    .text {
     margin: 0;
@@ -550,10 +546,6 @@ html {
    .first-block {
     margin-right: 120px;
    }
-
-   /* .footer > .logo {
-    display: inline-block;
-   } */
 
    .footer-text {
     margin-bottom: 16px;
